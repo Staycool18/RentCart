@@ -2,6 +2,14 @@
 
 import { useState } from 'react';
 
+export type CountrySelectValue = {
+  value: string;
+  label: string;
+  flag: string;
+  latlng: number[];
+  region: string;
+};
+
 export type LocationValue = {
   label: string;
   value: string;

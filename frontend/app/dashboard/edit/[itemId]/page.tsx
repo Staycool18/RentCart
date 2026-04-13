@@ -52,7 +52,7 @@ const EditItemPage = async ({ params }: { params: IParams }) => {
         </div>
         <EditItemClient 
           item={item} 
-          currentUser={currentUser} 
+          currentUser={currentUser as any} 
         />
       </Container>
     </ClientOnly>

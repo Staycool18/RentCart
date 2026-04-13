@@ -427,7 +427,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
             console.log('Order object keys:', confirmResponse.data.order ? Object.keys(confirmResponse.data.order) : 'No order object');
 
             // More robust check for order data - try multiple possible structures
-            let orderData = null;
+            let orderData: any = null;
             
             // Try different possible response structures
             if (confirmResponse.data.order) {
@@ -564,7 +564,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
             console.log('Order object keys:', confirmResponse.data.order ? Object.keys(confirmResponse.data.order) : 'No order object');
 
             // More robust check for order data - try multiple possible structures
-            let orderData = null;
+            let orderData: any = null;
             
             // Try different possible response structures
             if (confirmResponse.data.order) {

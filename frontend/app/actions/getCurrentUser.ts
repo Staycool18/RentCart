@@ -28,12 +28,12 @@ export default async function getCurrentUser(tokenArg?: string) {
       gender: userData.gender, // Include gender
       dateOfBirth: userData.dateOfBirth, // Include dateOfBirth
       name: userData.firstName || userData.username,
-      image: null,
+      image: undefined,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
-      emailVerified: null,
+      emailVerified: undefined,
       favoriteIds: [],
-      hashedPassword: null // Add this line to satisfy SafeUser type
+      hashedPassword: undefined // Add this line to satisfy SafeUser type
     };
   } catch (error: any) {
     console.error("Error getting current user:", error);

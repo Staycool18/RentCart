@@ -376,7 +376,7 @@ const RentModal = () => {
                 
                 if (currentCategories.includes(categoryLabel)) {
                   // Remove category if already selected
-                  newCategories = currentCategories.filter(cat => cat !== categoryLabel);
+                  newCategories = currentCategories.filter((cat: string) => cat !== categoryLabel);
                 } else {
                   // Add category if not selected
                   newCategories = [...currentCategories, categoryLabel];
